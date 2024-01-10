@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    tools:context=".ui.splash.view.ActivitySplash">
+    <RelativeLayout
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/coner"
+        android:layout_alignParentEnd="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/logo"
+           />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:background="@drawable/cornnn"
+        android:layout_above="@id/footer"/>
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <com.interview.interviewtask.utils.progressbar.ProgressBar
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading.."/>
+
+    </LinearLayout>
+
+</RelativeLayout>

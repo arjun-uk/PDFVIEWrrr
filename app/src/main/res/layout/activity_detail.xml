@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.detail.view.ActivityDetail">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/bottom_top_bg">
+        <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/top"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_20ssp"
+            android:text="Home"
+            android:gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textStyle="normal"/>
+    </RelativeLayout>
+    
+    <WebView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
